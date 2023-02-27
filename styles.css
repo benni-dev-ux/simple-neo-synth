@@ -70,7 +70,7 @@ body {
   border: 4px solid var(--border);
   padding: 0.8rem;
   margin: 1rem;
-  width: 13rem;
+  width: 80%;
   margin: auto;
   font-weight: 800;
   font-size: 22px;
@@ -85,6 +85,8 @@ body {
   transform: translateY(3px);
   transition: all 0.1s ease;
 }
+
+/**Customized selects**/
 
 select {
   appearance: none;
@@ -101,6 +103,7 @@ select {
 
 .select {
   width: 12%;
+  height: 2rem;
   border: 2px solid var(--border);
   padding: 0.25em 0.35em;
   font-size: 0.9rem;
@@ -113,12 +116,13 @@ select {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 20px;
+  height: 1.4rem;
   background: white;
   outline: solid 2px black;
 }
@@ -130,8 +134,8 @@ select {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  height: 2rem;
+  width: 2rem;
   background: black;
   cursor: pointer;
 }
@@ -165,7 +169,7 @@ select {
 }
 
 .form-control {
-  line-height: 3;
+  line-height: 2.5;
 }
 
 input[type="radio"] {
@@ -225,14 +229,19 @@ footer {
   .nb-border,
   #play-options {
     align-items: center;
-    min-height: 35rem;
+    min-height: 40rem;
     width: 55rem;
     padding: 2rem;
     margin: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+  }
+  #delay-options {
+    margin-bottom: 10rem;
   }
   footer {
     font-size: 1.6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   body {
     margin-bottom: 0;
@@ -243,5 +252,16 @@ footer {
   }
   #note-selects-div {
     width: 100%;
+  }
+  .slider::-webkit-slider-thumb {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .slider {
+    height: 2rem;
+  }
+  .select {
+    height: 2.5rem;
+    font-size: 1.4rem;
   }
 }
