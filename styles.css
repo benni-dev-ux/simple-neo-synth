@@ -1,0 +1,243 @@
+:root {
+  --main-bg-color: #fffeff;
+  --border: black;
+  --neobrut-accent-1: #1e948a;
+  --neobrut-accent-2: #ff84e4;
+  --neobrut-accent-3: #ffbf00;
+  --neobrut-accent-4: #f44400;
+  --select-border: #777;
+  --select-focus: #f44400;
+  --select-arrow: var(--select-border);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  max-width: 80rem;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+footer {
+  background-color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: black;
+  font-family: "Space Mono", monospace;
+}
+
+.nb-border {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 22rem;
+  border: 2px solid var(--border);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0 black;
+}
+
+.green {
+  background-color: var(--neobrut-accent-1);
+}
+
+.yellow {
+  background-color: var(--neobrut-accent-3);
+}
+
+.nb-btn {
+  border: 4px solid var(--border);
+  padding: 0.8rem;
+  margin: 1rem;
+  width: 13rem;
+  margin: auto;
+  font-weight: 800;
+  font-size: 22px;
+  position: relative;
+  box-shadow: 5px 5px 0 black;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+}
+
+.nb-btn:hover {
+  box-shadow: 0px 0px 0 black;
+  transform: translateY(3px);
+  transition: all 0.1s ease;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.select {
+  width: 12%;
+  border: 2px solid var(--border);
+  padding: 0.25em 0.35em;
+  font-size: 0.9rem;
+  cursor: pointer;
+  line-height: 1.1;
+  text-align: center;
+}
+
+select:focus {
+  border: 2px solid var(--select-focus);
+  border-radius: 0px;
+}
+
+#note-selects-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: white;
+  outline: solid 2px black;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+#oscillator-options {
+  background-color: var(--neobrut-accent-3);
+}
+
+#envelope-options {
+  background-color: var(--neobrut-accent-2);
+}
+
+#play-options {
+  height: 51rem;
+  width: 30rem;
+}
+
+#vibrato-options {
+  background-color: var(--neobrut-accent-1);
+}
+
+#delay-options {
+  background-color: var(--neobrut-accent-4);
+}
+
+.form-control {
+  line-height: 3;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  margin: 0;
+  font: inherit;
+  width: 1.4em;
+  height: 1.4em;
+  border: 0.15em solid black;
+  border-radius: 0%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 0%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 2em 1em black;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.inline-lable {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: lightgrey;
+  font-size: 0.9rem;
+  position: fixed;
+}
+
+@media only screen and (max-width: 62em) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .nb-border {
+    min-height: 25rem;
+    width: 30rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
+}
