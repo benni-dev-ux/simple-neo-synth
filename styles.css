@@ -5,9 +5,7 @@
   --neobrut-accent-2: #ff84e4;
   --neobrut-accent-3: #ffbf00;
   --neobrut-accent-4: #f44400;
-  --select-border: #777;
   --select-focus: #f44400;
-  --select-arrow: var(--select-border);
 }
 
 *,
