@@ -109,11 +109,6 @@ select {
   text-align: center;
 }
 
-select:focus {
-  border: 2px solid var(--select-focus);
-  border-radius: 0px;
-}
-
 #note-selects-div {
   display: flex;
   flex-direction: row;
@@ -204,9 +199,7 @@ input[type="radio"]:checked::before {
 
 .form-control + .form-control {
   margin-top: 1em;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  width: 80%;
 }
 
 .inline-lable {
@@ -228,14 +221,27 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 100%;
-    padding-left: 4%;
-    padding-right: 4%;
   }
-  .nb-border {
-    min-height: 25rem;
-    width: 30rem;
+  .nb-border,
+  #play-options {
+    align-items: center;
+    min-height: 35rem;
+    width: 55rem;
     padding: 2rem;
     margin: 1rem;
     margin-bottom: 2rem;
+  }
+  footer {
+    font-size: 1.6rem;
+  }
+  body {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #note-selects-div {
+    width: 100%;
   }
 }
