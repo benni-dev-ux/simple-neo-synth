@@ -49,7 +49,7 @@ body {
 .nb-border {
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  height: 26rem;
   width: 22rem;
   border: 2px solid var(--border);
   padding: 2rem;
@@ -156,7 +156,7 @@ select {
 }
 
 #play-options {
-  height: 51rem;
+  height: 53rem;
   width: 30rem;
 }
 
@@ -234,7 +234,6 @@ footer {
     min-height: 40rem;
     max-width: 55rem;
     width: 100%;
-    padding: 1rem;
     margin-bottom: 5rem;
   }
   #delay-options {
