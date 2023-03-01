@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #42c1d5;
-  --neutral-bg: #fffeff;
+  --neutral-bg: #fbf7f5;
   --border: black;
   --neobrut-accent-1: #1e948a;
   --neobrut-accent-2: #ff84e4;
@@ -34,7 +34,7 @@ footer {
   left: 0;
   padding: 1rem;
   text-align: center;
-  color: white;
+  color: var(--neutral-bg);
 }
 
 body {
@@ -76,6 +76,7 @@ body {
   font-weight: 800;
   font-size: 22px;
   position: relative;
+  background-color: var(--neutral-bg);
   box-shadow: 3px 3px 0 black;
   font-family: "Space Mono", monospace;
   text-transform: uppercase;
@@ -91,7 +92,7 @@ body {
 
 select {
   appearance: none;
-  background-color: transparent;
+  background-color: var(--neutral-bg);
   border: none;
   padding: 0 1em 0 0;
   margin: 0;
@@ -126,7 +127,7 @@ select {
   -webkit-appearance: none;
   width: 100%;
   height: 1.4rem;
-  background: white;
+  background: var(--neutral-bg);
   outline: solid 2px black;
 }
 
@@ -137,15 +138,15 @@ select {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 2rem;
+  width: 2rem;
   background: black;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 0;
   box-shadow: none;
   background: black;
@@ -192,7 +193,7 @@ input {
 input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
-  background-color: white;
+  background-color: var(--neutral-bg);
   margin: 0;
   font: inherit;
   width: 1.4em;
@@ -229,7 +230,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--border);
-  color: lightgrey;
+  color: var(--neutral-bg);
   font-size: 0.9rem;
   padding-left: 5rem;
   padding-right: 5rem;
