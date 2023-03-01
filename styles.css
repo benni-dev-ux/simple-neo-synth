@@ -1,5 +1,6 @@
 :root {
-  --main-bg-color: #fffeff;
+  --main-bg-color: #42c1d5;
+  --neutral-bg: #fffeff;
   --border: black;
   --neobrut-accent-1: #1e948a;
   --neobrut-accent-2: #ff84e4;
@@ -41,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-bg-color);
+  background-color: var(--neutral-bg);
   color: black;
   font-family: "Space Mono", monospace;
 }
@@ -162,6 +163,7 @@ select {
 #play-options {
   height: 53rem;
   width: 30rem;
+  background-color: var(--main-bg-color);
 }
 
 #vibrato-options {
