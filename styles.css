@@ -26,6 +26,11 @@
   padding-right: 12%;
 }
 
+h2 {
+  font-family: "Secular One", sans-serif;
+  color: var(--border);
+}
+
 footer {
   background-color: black;
   position: absolute;
