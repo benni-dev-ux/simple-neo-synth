@@ -196,9 +196,9 @@ window.onload = function() {
     function nextNote() {
         noteSelects[currentNoteIndex].style.background = "#ffbf00";
         if (noteSelects[currentNoteIndex - 1]) {
-            noteSelects[currentNoteIndex - 1].style.background = "white";
+            noteSelects[currentNoteIndex - 1].style.background = "#fbf7f5";
         } else {
-            noteSelects[7].style.background = "white"
+            noteSelects[7].style.background = "#fbf7f5"
         }
         currentNoteIndex++;
         if (currentNoteIndex === 8) {
